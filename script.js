@@ -64,9 +64,9 @@ let func1 = ($param) => {
 }
 console.log(func1('Bismillah'));
 */
-
+/*
 let strArr = ['One', 'Two', 'Five', 'Nine'];
-let numArr = [2, 4, 7, 8];
+let numArr = [2, 4, 7, 8];*/
 //1st param = item default, would not be changed
 //2nd param = index default, would not be changed
 //3rd param = array default, would not be changed
@@ -81,7 +81,23 @@ strArr.forEach( FuncPrint );*/
 }
 let result = strArr.map(MapFunc);
 console.log(result);*/
+/*
 let SquareArr =numArr.map(function(item) {
     return item*item;
 });
 console.log(SquareArr);
+*/
+
+// Math Object
+let val = Math.PI;
+val = Math.E;
+val = Math.round(3.1);
+val = Math.ceil(3.1);
+val = Math.floor(3.1);
+val = Math.sqrt(16);
+val = Math.abs(-16);
+val = Math.pow(3,2);
+val = Math.min(3,2,-2);
+val = Math.max(3,2,22,-2);
+val = Math.floor(Math.random(3)*1000);
+console.log(val);
