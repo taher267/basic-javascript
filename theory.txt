@@ -6,3 +6,5 @@
 6, class mutable
 7, func immutable, not headache about muted
 
+//https://www.youtube.com/watch?v=KB5Ym33BvPc
+
