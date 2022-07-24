@@ -1,2 +1,8 @@
-1. class base component instanciate heighly cost then func
-2. it is hampered for user about performance issue (headache of performance issue low config device)
+1. class base component (a number of class) instanciate heighly cost then func
+2. it is hampered for user about performance issue (headache of performance issue low config device);
+3, lacking not fill
+4, react vartual dom basis (same to same clone copy store in RAM), as well as costly
+5. it is update on base to state, where class system, class state is muted (data changed but address not changed)
+6, class mutable
+7, func immutable, not headache about muted
+
