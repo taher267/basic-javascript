@@ -1,0 +1,2 @@
+1. class base component instanciate heighly cost then func
+2. it is hampered for user about performance issue (headache of performance issue low config device)
