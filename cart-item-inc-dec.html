@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>hook</title>
+</head>
+<body>
+
+  <h4>Cart</h4>
+  <div>
+    <button onClick={incDec(this)}>-</button>
+    <span></span>
+    <button onClick={incDec(this)}>+</button>
+  </div>
+  <script>
+    const [state, setState]=useState(1);
+const display = document.querySelector('span');
+  display.innerHTML=state;
+const incDec=({innerHTML,attributes})=>{
+// console.log(e.attributes.step.value)
+  if(innerHTML.trim()==='+')return display.innerHTML=setState(s=>s+(Number(attributes?.step?.value??1)));
+  display.innerHTML=setState(s=>s-1);
+  
+}
+
+    // console.log(setState(st=>st+1));
+    function useState (arg) {
+      let st =arg;
+      const setSt=ar2=>{
+        if(typeof ar2==='function'){
+          const newST=ar2(st);
+          st=newST;
+          return st;
+        }
+      return ar2;
+      }
+    return [st, setSt];
+    }
+  </script>
+</body>
+</html>
